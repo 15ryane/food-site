@@ -2,7 +2,7 @@ export default {
   "name": "Sourdough Bread",
   "source": "Amish Breadsite",
   "author": "Amish Breadsite",
-  "description": "A pretty standard sourdough.",
+  "description": "Standard sourdough.",
   "prepTime": 1440,
   "cookTime": 30,
   "recipeYield": "2 loaves",
@@ -12,10 +12,10 @@ export default {
   "recipeCuisine": ["American"],
   "recipeIngredient": [
     "1 cup sourdough starter",
-    "6 cups of bread flour",
-    "1 1/2 tsp salt",
+    "6 cups bread flour",
+    "1 1/2 tsp table salt",
     "1/4 cup sugar",
-    "1/2 cup of oil",
+    "1/2 cup oil",
     "1 1/2 cup warm water",
   ],
   "recipeInstructions": [

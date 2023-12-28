@@ -1,6 +1,6 @@
 export default {
   "name": "Brownies",
-  "source": "",
+  "source": "Joy of Cooking",
   "author": "",
   "description": "Are these actually brownies?",
   "prepTime": 15,
@@ -13,11 +13,12 @@ export default {
   "recipeIngredient": [
     "2 cups sugar",
     "4 eggs",
-    "1/2 tsp of salt",
+    "1/2 tsp salt",
     "1 tsp vanilla",
     "4 oz chocolate",
-    "1/2 cup of butter",
-    "1 cup flour"
+    "1/2 cup butter",
+    "1 cup flour",
+    "1/2 cup walnuts"
   ],
   "recipeInstructions": [
     {
@@ -30,11 +31,11 @@ export default {
     },
     {
       "name": "Add chocolate",
-      "text": "Melt chocolate and butter. Allow to cool and fold into the egg mixture"
+      "text": "Melt chocolate and butter. Allow to cool and fold into the egg mixture."
     },
     {
-      "name": "Add flour",
-      "text": "Fold in flour."
+      "name": "Add flour and nuts",
+      "text": "Gently fold in flour and walnuts. Don't knock the air out."
     },
     {
       "name": "Bake",

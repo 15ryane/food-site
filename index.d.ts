@@ -15,4 +15,4 @@ type Recipe = {
 }
 
 type Category = 'Dessert' | 'Entree' | 'Side' | 'Bread'
-type Cuisine = 'American'
+type Cuisine = 'American' | 'German' | 'French' | 'Chinese' | 'Indian' | 'Italian'
