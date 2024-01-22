@@ -25,7 +25,7 @@ export default function Header({
   return (
     <header className="grid gap-3">
       <Link href="/" className="text-black visited:text-black hover:no-underline">
-        <h1 className="text-2xl">The Adams-Ryan Recipe Book</h1>
+        <h1 className="text-2xl">The Adams-Ryan Cookbook</h1>
       </Link>
       {!supressRadioGroup && <RadioGroup
         value={filter}
