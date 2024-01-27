@@ -18,7 +18,7 @@ export default {
     "1/3 cup peanuts",
     "3 tsp urad daal",
     "3 tsp black mustard seeds",
-    "3 tstp cumin seeds",
+    "3 tsp cumin seeds",
     "2 jalapeno peppers",
     "30 curry leaves",
     "1 tbsp turmeric",
