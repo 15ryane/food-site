@@ -2,6 +2,7 @@
 
 import Badge from "@/components/Badge";
 import Header, { FilterOption, filterOptions } from "@/components/Header";
+import StyledLink from "@/components/StyledLink";
 import authors, { Author } from "@/data/authors";
 import collections, { Collection } from "@/data/collections";
 import recipes from "@/data/recipes";
@@ -45,7 +46,7 @@ export default function Home() {
             <Combobox.Input 
               onChange={(event) => setQuery(event.target.value)} 
               className='border-solid rounded border-2 px-2 py-0.5 w-full' 
-              placeholder='Search for recipes by name, author, or source'
+              placeholder='Search by name, author, or source'
               displayValue={(recipe: typeof selectedRecipe) => recipe?.name ?? '' }        
             />
             <Transition
@@ -66,14 +67,14 @@ export default function Home() {
                           focus ? 'bg-blue-500 text-white' : 'bg-white text-black'
                         } hover:cursor-pointer`}
                       >
-                        <Link href={`/recipe/${recipe.id}`} className={`visited:text-black hover:text-white hover:no-underline ${focus ? 'text-white visited:text-white hover:text-white' : 'text-black'}`}>
-                          <div className="px-1 py-2">
-                            <div className='flex gap-3'>
+                        <Link href={`/recipe/${recipe.id}`}>
+                          <div className="grid gap-0.5 px-1 py-2 text-sm sm:text-base">
+                            <div className='flex gap-3 items-center'>
                               {recipe.name}
                               {recipe.isVegan && <Badge>Vegan</Badge>}
                               {recipe.isVegetarian && !recipe.isVegan && <Badge>Vegetarian</Badge>}
                             </div>
-                            <div className='italic font-light text-sm pl-1'>
+                            <div className='italic font-light text-xs sm:text-sm pl-1'>
                               {(authors[recipe.author as Author]).label}, from{" "} 
                               {collections[recipe.collection as Collection].searchLabel ?? 
                               collections[recipe.collection as Collection].label}
@@ -93,15 +94,15 @@ export default function Home() {
           return (
             <div key={criterion} className='flex flex-col gap-2'>
               <h2 className='text-xl'>Browse by {criterion}:</h2>
-              <ol className='text-md'>
+              <ol className='text-md grid gap-1'>
                   {Object
                     .entries(grouped)
                     .sort((a, b) => criterionMap[a[0]].label.localeCompare(criterionMap[b[0]].label))
                     .map(([k,v]) => {
                       const filtered = v.filter(r => filter.id === 'all' || !!r[filter.id])
                       if(!filtered.length) return null
-                      return <li key={`criteria-item-${toKebabCase(criterion)}-${toKebabCase(k)}`}>
-                        <Link href={`/${criterion}/${k}`}>{criterionMap[k]?.label ?? k}</Link> ({filtered.length})
+                      return <li key={`criteria-item-${toKebabCase(criterion)}-${toKebabCase(k)}`} className="text-sm sm:text-base">
+                        <StyledLink className="text-blue-600 visited:text-blue-800 hover:underline" href={`/${criterion}/${k}`}>{criterionMap[k]?.label ?? k}</StyledLink> ({filtered.length})
                       </li>
                     })
                   }

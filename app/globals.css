@@ -8,16 +8,13 @@ body {
   line-height: 1.6;
   font-size: 18px;
   color: #444;
-  padding: 0 10px;
+  padding: 0 24px;
 }
 h1,
 h2,
 h3 {
   line-height: 1.2;
 }
-a {
-  @apply text-blue-600 visited:text-blue-800 hover:underline;
-}
 ol {
-  @apply list-disc pl-8
+  @apply list-disc pl-8;
 }

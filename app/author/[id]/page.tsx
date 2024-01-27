@@ -1,11 +1,11 @@
 'use client'
 
-import Link from "next/link";
 import authors, { Author } from "@/data/authors";
 import recipes from "@/data/recipes";
 import { useState } from "react";
 import Header, { FilterOption, filterOptions } from "@/components/Header";
 import Footer from "@/components/Footer";
+import StyledLink from "@/components/StyledLink";
 
 export default function AuthorPage({ params: { id } }: { params: { id: Author } }) {
   const [filter, setFilter] = useState<FilterOption>(filterOptions[0])
@@ -20,7 +20,7 @@ export default function AuthorPage({ params: { id } }: { params: { id: Author } 
         ? <ol className="text-sm">
           {filtered.map((r) => (
             <li key={r.id}>
-              <Link href={`/recipe/${r.id}`}>{r.name}</Link>
+              <StyledLink href={`/recipe/${r.id}`}>{r.name}</StyledLink>
             </li>
           ))}
         </ol> 

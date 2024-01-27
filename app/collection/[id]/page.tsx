@@ -1,11 +1,11 @@
 'use client'
 
 import { useState } from "react";
-import Link from "next/link";
 import collections, { Collection } from "@/data/collections";
 import recipes from "@/data/recipes";
 import Header, { FilterOption, filterOptions } from "@/components/Header";
 import Footer from "@/components/Footer";
+import StyledLink from "@/components/StyledLink";
 
 export default function CollectionPage({ params: { id } }: { params: { id: Collection } }) {
   const [filter, setFilter] = useState<FilterOption>(filterOptions[0])
@@ -18,7 +18,7 @@ export default function CollectionPage({ params: { id } }: { params: { id: Colle
         ? <ol className="text-sm">
           {filtered.map((r) => (
             <li key={r.id}>
-              <Link href={`/recipe/${r.id}`}>{r.name}</Link>
+              <StyledLink href={`/recipe/${r.id}`}>{r.name}</StyledLink>
             </li>
           ))}
         </ol> 

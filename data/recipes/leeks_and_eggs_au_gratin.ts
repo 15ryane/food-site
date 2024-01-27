@@ -12,7 +12,7 @@ export default {
     "isVegan": false,
     "isVegetarian": true,
     "recipeCategory": ["Entree"],
-    "recipeCuisine": ["American"],
+    "recipeCuisine": ["British"],
     "recipeIngredient": [
       "6 egg",
       "1 lb leek",

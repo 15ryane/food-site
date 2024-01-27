@@ -19,4 +19,4 @@ export interface Recipe {
 }
 
 export type Category = 'Dessert' | 'Entree' | 'Side' | 'Bread'
-export type Cuisine = 'American' | 'German' | 'French' | 'Chinese' | 'Indian' | 'Italian'
+export type Cuisine = 'American' | 'German' | 'French' | 'Chinese' | 'Indian' | 'Italian' | 'British' | 'West African'

@@ -20,6 +20,8 @@ import raquets_shrimp from "./raquets_shrimp";
 import sourdough_bread from "./sourdough_bread";
 import tiramisu from "./tiramisu";
 import white_bread_machine_bread from "./white_bread_machine_bread";
+import jollof_rice from "./jollof_rice";
+import lemon_rice from "./lemon_rice";
 
 export default [
   baked_leek_and_beans,
@@ -43,4 +45,6 @@ export default [
   sourdough_bread,
   tiramisu,
   white_bread_machine_bread,
+  jollof_rice,
+  lemon_rice
 ] as Array<Recipe>

@@ -24,8 +24,8 @@ export default function Header({
 }) {
   return (
     <header className="grid gap-3">
-      <Link href="/" className="text-black visited:text-black hover:no-underline">
-        <h1 className="text-2xl">The Adams-Ryan Cookbook</h1>
+      <Link href="/" className="hover:underline">
+        <h1 className="text-xl sm:text-2xl">The Adams-Ryan Cookbook</h1>
       </Link>
       {!supressRadioGroup && <RadioGroup
         value={filter}
@@ -44,7 +44,7 @@ export default function Header({
                   : ""
               }
                 ${checked ? "bg-sky-900/75 text-white" : "bg-white"}
-                cursor-pointer focus:outline-none rounded-full px-3 py-0.5`
+                cursor-pointer focus:outline-none rounded px-3 py-1 text-sm sm:text-base`
             }
           >
             {option.label}

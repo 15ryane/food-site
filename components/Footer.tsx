@@ -1,9 +1,9 @@
-import Link from "next/link";
+import StyledLink from "./StyledLink";
 
 export default function Footer() {
   return (
     <footer>
-      <Link className="text-xs" href="/">{"> Go home"}</Link>
+      <StyledLink className="text-xs" href="/">{"> Go home"}</StyledLink>
     </footer>
   )
 }
