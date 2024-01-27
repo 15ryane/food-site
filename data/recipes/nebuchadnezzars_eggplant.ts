@@ -41,7 +41,7 @@ export default {
       },
       {
         "name": "Prepare fry oil",
-        "text": "In a wok (or something similar, add a neutral oil. Bring to temperature. Add garlic, onions, ginger, and peppercorn. Fry. Remove aromatics."
+        "text": "In a wok (or something similar), add a neutral oil. Bring to temperature. Add garlic, onions, ginger, and peppercorn. Fry. Remove aromatics."
       },
       {
         "name": "Fry eggplant",

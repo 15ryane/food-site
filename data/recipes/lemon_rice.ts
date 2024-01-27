@@ -51,7 +51,7 @@ export default {
     },
     {
       "name": "Mix in lemon juice",
-      "text": "When the rice is cooled to eating temperature, add the lemon juice. Still very well to combine."
+      "text": "When the rice is cooled to eating temperature, add the lemon juice. Stir very well to combine."
     },
     {
       "name": "Serve",
