@@ -11,12 +11,16 @@ export enum Author {
   MARY = 'm-stone',
   RISHIA = 'r-zimmerman',
   LITE = 'cooking-lite',
-  JOHN = 'chef-john'
+  JOHN = 'chef-john',
+  JKLA = 'jkla'
 }
 
 export default {
   [Author.ABBY]: {
     "label": "Abby Adams"
+  },
+  [Author.JKLA]: {
+    "label": "J. Kenji López-Alt"
   },
   [Author.JOHN]: {
     "label": "Chef John"

@@ -9,13 +9,18 @@ export enum Collection {
   JOY_OF_COOKING = "the-joy-of-cooking",
   NYT = "nyt",
   NYT_MAG = "nyt-mag",
-  ALLRECIPES = "allrecipes"
+  ALLRECIPES = "allrecipes",
+  SERIOUSEATS = "seriouseats"
 }
 
 const collections = {
   [Collection.UNSOURCED]: {
     "label": "Unsourced",
     "searchLabel": "an unknown source"
+  },
+  [Collection.SERIOUSEATS]: {
+    "label": "Serious Eats",
+    "searchLabel": "Serious Eats"
   },
   [Collection.ALLRECIPES]: {
     "label": "allrecipes.com",
