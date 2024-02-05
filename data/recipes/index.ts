@@ -22,6 +22,7 @@ import tiramisu from "./tiramisu";
 import white_bread_machine_bread from "./white_bread_machine_bread";
 import jollof_rice from "./jollof_rice";
 import lemon_rice from "./lemon_rice";
+import chocolate_chip_cookies from "./chocolate_chip_cookies";
 
 export default [
   baked_leek_and_beans,
@@ -46,5 +47,6 @@ export default [
   tiramisu,
   white_bread_machine_bread,
   jollof_rice,
-  lemon_rice
+  lemon_rice,
+  chocolate_chip_cookies
 ] as Array<Recipe>
