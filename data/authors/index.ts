@@ -12,10 +12,14 @@ export enum Author {
   RISHIA = 'r-zimmerman',
   LITE = 'cooking-lite',
   JOHN = 'chef-john',
-  JKLA = 'jkla'
+  JKLA = 'jkla',
+  LUZ = 'luz-r'
 }
 
 export default {
+  [Author.LUZ]: {
+    "label": "Luz G. Ryan"
+  },
   [Author.ABBY]: {
     "label": "Abby Adams"
   },
