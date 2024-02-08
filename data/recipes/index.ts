@@ -23,8 +23,10 @@ import white_bread_machine_bread from "./white_bread_machine_bread";
 import jollof_rice from "./jollof_rice";
 import lemon_rice from "./lemon_rice";
 import chocolate_chip_cookies from "./chocolate_chip_cookies";
+import beef_kaldereta from "./beef_kaldereta";
 
 export default [
+  beef_kaldereta,
   baked_leek_and_beans,
   bbq_hamburger,
   boiled_dressing,
