@@ -10,13 +10,18 @@ export enum Collection {
   NYT = "nyt",
   NYT_MAG = "nyt-mag",
   ALLRECIPES = "allrecipes",
-  SERIOUSEATS = "seriouseats"
+  SERIOUSEATS = "seriouseats",
+  YOUTUBE = "youtube"
 }
 
 const collections = {
   [Collection.UNSOURCED]: {
     "label": "Unsourced",
     "searchLabel": "an unknown source"
+  },
+  [Collection.YOUTUBE]: {
+    "label": "Youtube",
+    "searchLabel": "Youtube",
   },
   [Collection.SERIOUSEATS]: {
     "label": "Serious Eats",

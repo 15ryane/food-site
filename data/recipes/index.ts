@@ -24,6 +24,7 @@ import jollof_rice from "./jollof_rice";
 import lemon_rice from "./lemon_rice";
 import chocolate_chip_cookies from "./chocolate_chip_cookies";
 import beef_kaldereta from "./beef_kaldereta";
+import pizza_dough from "./pizza_dough";
 
 export default [
   beef_kaldereta,
@@ -50,5 +51,6 @@ export default [
   white_bread_machine_bread,
   jollof_rice,
   lemon_rice,
-  chocolate_chip_cookies
+  chocolate_chip_cookies,
+  pizza_dough
 ] as Array<Recipe>

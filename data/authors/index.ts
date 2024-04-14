@@ -1,5 +1,6 @@
 export enum Author {
   ABBY = 'a-adams',
+  RAGUSEA = 'a-ragusea',
   ANON = 'anon',
   HALLMAN = 'j-hallman',
   DENNIS = 'chef-dennis',
@@ -22,6 +23,9 @@ export default {
   },
   [Author.ABBY]: {
     "label": "Abby Adams"
+  },
+  [Author.RAGUSEA]: {
+    "label": "Adam Ragusea"
   },
   [Author.JKLA]: {
     "label": "J. Kenji López-Alt"
